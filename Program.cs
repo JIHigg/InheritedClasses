@@ -6,7 +6,14 @@ namespace InheritedClasses
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Person person = new Person( "john", "smith");
+            try
+            {
+                person.Age = -2;
+            }catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
