@@ -23,38 +23,60 @@ namespace InheritedClasses
         public int Age
         {
             get { return age; }
-            set { if (value < 1)
+            set 
+            {
+                if (value < 1)
                     throw new Exception("Age must be more than zero");
-            else
-                age = value; }
+                else
+                    age = value; }
         }
         private string fName;
 
         public string FName
         {
             get { return fName; }
-            set { fName = value; }
+            set 
+            {
+                if (value.Length < 2 || value.Length > 10 )
+                    throw new Exception("Please enter a first name that" +
+                                        "no is longer than ten characters.");
+                 else
+                     fName = value; }
         }
         private string lName;
 
         public string LName
         {
             get { return lName; }
-            set { lName = value; }
+            set 
+            {
+                if (value.Length <3 || value.Length > 15)
+                    throw new Exception("Please enter a name that is " +
+                                        "no longer than fifteen character.");
+                lName = value; }
         }
         private double height;
 
         public double Height
         {
             get { return height; }
-            set { height = value; }
+            set 
+            {
+                if (value <= 0)
+                    throw new Exception("Please enter height in cm.");
+
+                height = value; }
         }
         private double weight;
 
         public double Weight
         {
             get { return weight; }
-            set { weight = value; }
+            set 
+            {
+                if (value < 0)
+                    throw new Exception("Please enter weight in kg.");
+                weight = value; }
         }
 
 
