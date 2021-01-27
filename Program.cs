@@ -61,23 +61,26 @@ namespace InheritedClasses
             //}
 
             //3.2 PersonHandler Class
-            //PersonHandler PH = new PersonHandler();
-            //List<Person> People = new List<Person>();
+            PersonHandler PH = new PersonHandler();
+            List<Person> People = new List<Person>();
 
-            //Person testSubject = PH.CreatePerson(21, "johan", "Anders", 173, 78);
-            //Person nextSubject = PH.CreatePerson(45, "Anna", "Smith", 145, 59);
-            //Person thirdSubject = PH.CreatePerson(30, "Michael", "George", 201, 62);
-            //Person lastSubject = PH.CreatePerson(4, "Elisabeth", "Anders", 78, 20);
+            Person testSubject = PH.CreatePerson(21, "johan", "Anders", 173, 78);
+            Person nextSubject = PH.CreatePerson(45, "Anna", "Smith", 145, 59);
+            Person thirdSubject = PH.CreatePerson(30, "Michael", "George", 201, 62);
+            Person lastSubject = PH.CreatePerson(4, "Elisabeth", "Anders", 78, 20);
 
-            //People.Add(testSubject);
-            //People.Add(nextSubject);
-            //People.Add(thirdSubject);
-            //People.Add(lastSubject);
+            People.Add(testSubject);
+            People.Add(nextSubject);
+            People.Add(thirdSubject);
+            People.Add(lastSubject);
 
-            //PH.SetAge(testSubject, 89);
-            //PH.SetName(nextSubject, "Terry", "Pratchett");
-            //PH.SetHeight(thirdSubject, 145);
-            //PH.SetWeight(lastSubject, 190);
+            PH.SetAge(testSubject, 89);
+            PH.SetName(nextSubject, "Terry", "Pratchett");
+            PH.SetHeight(thirdSubject, 145);
+            PH.SetWeight(lastSubject, 190);
+
+            //F.13) Om fåglaren behöver ett nytt attribut, kan vi lägga det i Bird Klassen.
+            //F.14) Om alla djur behöver det nya attributet, ska vi lägga det i Animal Klassen.
 
         }
     }
