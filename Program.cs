@@ -82,6 +82,10 @@ namespace InheritedClasses
             //F.13) Om fåglaren behöver ett nytt attribut, kan vi lägga det i Bird Klassen.
             //F.14) Om alla djur behöver det nya attributet, ska vi lägga det i Animal Klassen.
 
+            List<Animal> Animals = new List<Animal>();
+
+            Bird animal1 = new Bird();
+
         }
     }
 }

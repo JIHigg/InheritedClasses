@@ -13,6 +13,13 @@ namespace InheritedClasses
         public int Size { get; set; }
         public double Weight { get; set; }
         public string Habitat { get; set; }
+        public Animal(string name, int size, double weight, string habitat)
+        {
+            Name = name;
+            Size = size;
+            Weight = weight;
+            Habitat = habitat;
+        }
         public virtual string DoSound(string sound)
         {
             return $"A { this.GetType().Name} makes a '{sound}' sound. ";

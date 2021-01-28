@@ -16,6 +16,16 @@ namespace InheritedClasses
             get { return noOfEggs; }
             set { noOfEggs = value; }
         }
+        public Swan(double wingspan, string diet, int noOfEggs
+            ,string name, int size, double weight, string habitat):base
+            (wingspan,diet,name,size,weight,habitat)
+        {
+            NoOfEggs = noOfEggs;
+        }
+        public Swan() :this(2, "seaweed", 5, "Swan", 1, 7, "Water")
+        {
+
+        }
 
         public override string Stats()
         {

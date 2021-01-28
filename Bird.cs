@@ -11,6 +11,17 @@ namespace InheritedClasses
     {
         public double WingSpan { get; set; }
         public string FavoriteDiet { get; set; }
+
+        public Bird(double wingspan, string diet, string name, int size,
+            double weight, string habitat): base(name,size,weight,habitat)
+        {
+            WingSpan = wingspan;
+            FavoriteDiet = diet;
+        }
+        public Bird(): this(.36, "Seeds", "Crow", 1, 1.2, "Forest")
+        {
+
+        }
         public override string DoSound(string sound)
         {
             return base.DoSound(sound);

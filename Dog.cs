@@ -23,7 +23,16 @@ namespace InheritedClasses
             get { return breed; }
             set { breed = value; }
         }
+        public Dog(string furColor, string breed, string name, int size,
+                    double weight, string habitat ): base(name,size,weight,habitat)
+        {
+            FurColor = furColor;
+            Breed = breed;
+        }
+        public Dog():this("Brown","Spaniel","Dog",2,15,"Indoors")
+        {
 
+        }
 
         public override string DoSound(string sound)
         {
