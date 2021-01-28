@@ -21,7 +21,7 @@ namespace InheritedClasses
         }
         public override string DoSound(string sound)
         {
-            return base.DoSound(sound);
+            return base.DoSound("*mumble mumble mumble*");
         }
 
         public override string Stats()

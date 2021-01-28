@@ -36,7 +36,7 @@ namespace InheritedClasses
 
         public override string DoSound(string sound)
         {
-            return base.DoSound(sound);
+            return base.DoSound("Woof");
         }
 
         //A method returning statistics for the dog.
@@ -44,6 +44,12 @@ namespace InheritedClasses
         {
             return base.Stats() + $"{Name} has a beautiful coat of" +
                 $" {FurColor} fur and is a {Breed} type of dog.";
+        }
+
+        //En Metod hämtar bara en statistic för hunden.
+        public string GetBreed()
+        {
+            return "Breed: " + this.Breed;
         }
     }
 }
