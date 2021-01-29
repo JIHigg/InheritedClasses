@@ -30,8 +30,8 @@ namespace InheritedClasses
 
         public override string Stats()
         {
-            return base.Stats() + $"{Name} have a neck length of " +
-                $"{NeckLength.ToString()} cm.";
+            return base.Stats() + $"\nNeck Length: " +
+                $"{NeckLength.ToString()} cm";
         }
 
     }

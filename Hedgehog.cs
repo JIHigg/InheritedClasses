@@ -26,8 +26,7 @@ namespace InheritedClasses
 
         public override string Stats()
         {
-            return base.Stats() + $"{Name} has {NoOfSpikes.ToString()}" +
-                $" spikes on its back." ;
+            return base.Stats() + $"\nNumber of spikes: {NoOfSpikes.ToString()}";
         }
 
     }

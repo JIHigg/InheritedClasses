@@ -115,19 +115,25 @@ namespace InheritedClasses
             {
                     Console.WriteLine(animal.Name);
                     Console.WriteLine(animal.DoSound("Hello"));
-                    Console.WriteLine("\n");
                  
                 if(animal is IPerson human)
                 {
                     human.Talk("*Hoooowwwlll", "Hello");
                 }
+                Console.WriteLine("");
             }
+
+            Console.WriteLine("Press Any Key to see all of the facts about my animals:");
+            Console.ReadKey();
 
             List<Dog> Dogs = new List<Dog>();
             //Dogs.Add(horse); - Fungerar inte
             //F.9) Instansen måste vara en Dog eller Dog sub-klass.
             //F.10) Listen måste vara en Animal klass för att alla 
             // klasser skall kunna lagras tillsammans.
+
+            Console.WriteLine("Here are all the facts about Animals");
+            Console.WriteLine("--------------------------------");
 
             foreach(Animal animal in Animals)
             {
@@ -138,18 +144,25 @@ namespace InheritedClasses
                 {
                     Console.WriteLine(hund.GetBreed());
                 }
+                Console.WriteLine("");
+
 
                 //animal.GetBreed(); - Fungerar inte
                 //F.17) Metoden kan inte åt från Animals listan för att 
                 // metoden är inte skapa i Animal klassen.
             }
-            foreach(Animal hund in Animals)
+            Console.WriteLine("\nHere are stats about just the dogs");
+            foreach (Animal hund in Animals)
             {
                 if (hund is Dog dog1)
                 {
-                    Console.WriteLine(hund.Stats());
+                    Console.WriteLine(hund.Stats()+"\n");
                 }
+
             }
+
+            Console.WriteLine("\nHere is a list of custom errors");
+            Console.WriteLine("-------------------------------");
 
             var UserErrors = new List<UserError>()
             {
@@ -163,7 +176,8 @@ namespace InheritedClasses
 
             foreach(UserError error in UserErrors)
             {
-                Console.WriteLine(error.UEMessage());
+                Console.WriteLine(error.UEMessage()+"\n");
+
             }
 
             //F.11) Polymorfism är viktigt att bemästra eftersom det är ett

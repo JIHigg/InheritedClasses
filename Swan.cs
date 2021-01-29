@@ -29,7 +29,7 @@ namespace InheritedClasses
 
         public override string Stats()
         {
-            return base.Stats() + $"The {Name} has {NoOfEggs.ToString()} eggs.";
+            return base.Stats() + $"\nClutch Size: {NoOfEggs.ToString()} eggs";
         }
     }
 }

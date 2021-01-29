@@ -29,8 +29,8 @@ namespace InheritedClasses
 
         public override string Stats()
         {
-            return base.Stats() + $"The {Name} has a pack of" +
-                $" {PackSize.ToString()} and roams an area of {HuntingArea.ToString()}km.";
+            return base.Stats() + $"\nPack Size: " +
+                $" {PackSize.ToString()} \nHunting Area: {HuntingArea.ToString()}km.";
         }
 
     }

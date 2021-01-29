@@ -29,8 +29,8 @@ namespace InheritedClasses
 
         public override string Stats()
         {
-            return $" {base.Stats()} " + $" the wing span is " +
-                $"{WingSpan.ToString()}. The {Name} likes to eat {FavoriteDiet}.";
+            return $"{base.Stats()} " + $"\nWingSpan: " +
+                $"{WingSpan.ToString()}\nDiet: {FavoriteDiet}";
         }
 
     }

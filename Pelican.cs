@@ -30,7 +30,7 @@ namespace InheritedClasses
 
         public override string Stats()
         {
-            return base.Stats() + $"This {Name} has {FeatherColor} feathers.";
+            return base.Stats() + $"\nColor of Feathers: " + FeatherColor.ToString();
         }
     }
 }

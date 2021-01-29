@@ -28,8 +28,8 @@ namespace InheritedClasses
 
         public override string Stats()
         {
-            return base.Stats() + $"This worm has {NoOfMates.ToString()}" +
-                $" partners and is {Length.ToString()} cm long.";
+            return base.Stats() + $"\nAverage number of Mates: {NoOfMates.ToString()}" +
+                $"\nAverage Length: {Length.ToString()} cm";
         }
 
     }

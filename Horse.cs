@@ -26,7 +26,7 @@ namespace InheritedClasses
 
         public override string Stats()
         {
-            return base.Stats() + $"A {Name} can have {NoOfLegs.ToString()} legs.";
+            return base.Stats() + $"\nNumber of Legs: " + NoOfLegs.ToString();
         }
 
     }

@@ -27,8 +27,8 @@ namespace InheritedClasses
 
         public virtual string Stats()
         {
-            return $"A {GetType().Name} is {this.Size.ToString()} cm " +
-                $"long, {this.Weight.ToString()} kg, and lives in {this.Habitat}.";
+            return $"Animal: {this.Name}\nSize: {this.Size.ToString()} m \n" +
+                $"Weight: {this.Weight.ToString()} kg \nHabitat: {this.Habitat}";
         }
     }
 }

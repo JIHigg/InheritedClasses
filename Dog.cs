@@ -42,8 +42,8 @@ namespace InheritedClasses
         //A method returning statistics for the dog.
         public override string Stats()
         {
-            return base.Stats() + $"{Name} has a beautiful coat of" +
-                $" {FurColor} fur and is a {Breed} type of dog.";
+            return base.Stats() + $"\nFur Color: " +
+                $" {FurColor}\nBreed: {Breed}";
         }
 
         //En Metod hämtar bara en statistic för hunden.
