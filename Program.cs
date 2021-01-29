@@ -143,11 +143,37 @@ namespace InheritedClasses
                 //F.17) Metoden kan inte åt från Animals listan för att 
                 // metoden är inte skapa i Animal klassen.
             }
-            foreach(Dog hund in Animals)
+            foreach(Animal hund in Animals)
             {
-                Console.WriteLine(hund.Stats());
+                if (hund is Dog dog1)
+                {
+                    Console.WriteLine(hund.Stats());
+                }
             }
 
+            var UserErrors = new List<UserError>()
+            {
+                 new NumericInputError(),
+                 new TextInputError(),
+            };
+
+            UserErrors.Add(new ImproperDecimalError());
+            UserErrors.Add(new NumberTooLowError());
+            UserErrors.Add(new UnrecognizedInputError());
+
+            foreach(UserError error in UserErrors)
+            {
+                Console.WriteLine(error.UEMessage());
+            }
+
+            //F.11) Polymorfism är viktigt att bemästra eftersom det är ett
+            //      effektivt sätt att skriva större projekt.
+            //F.12) Polymorfism kan förändra och förbättra kod via en bra struktur 
+            //      genom att tillåta ett effktivt sätt att ändra kod uppifrån och 
+            //      ner och minska överflödig kod.
+            //F.13) En Abstrakt klass gör det möjligt att ange och implementera 
+            //      metoder och objekt, ett Interface tillåter bara att ange dem.
+            //      En underklass kan också bara ha en Abstrakt klass, men flera Interfacer.
         }
     }
 }
